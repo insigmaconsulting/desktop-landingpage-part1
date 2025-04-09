@@ -1,13 +1,21 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import { TopBanner } from "@/components/landing/TopBanner";
+import { Navigation } from "@/components/landing/Navigation";
+import { Hero } from "@/components/landing/Hero";
+import { ActionLine } from "@/components/landing/ActionLine";
+import { AboutSection } from "@/components/landing/AboutSection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="bg-white flex flex-col items-stretch">
+      <header className="bg-white flex w-full flex-col items-stretch font-normal max-md:max-w-full">
+        <TopBanner />
+        <Navigation />
+      </header>
+      <Hero />
+      <ActionLine />
+      <AboutSection />
+    </main>
   );
 };
 
